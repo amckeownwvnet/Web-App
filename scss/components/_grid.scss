@@ -1,0 +1,148 @@
+/*--------------------------------------------------
+:: Grid
+-------------------------------------------------- */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 70px 70px minmax(150px, auto);
+	grid-template-areas:
+    "header"
+    "nav"
+    "main";
+}
+
+header {
+	padding:15px;
+	background-color: $lavender;
+	grid-area: header;
+	align-items: center;
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+}
+
+nav {
+	background-color: $purple;
+	grid-area: nav;
+}
+
+main {
+	grid-area: main;
+	display: flex;
+	flex-direction: column;
+
+	.social {
+		grid-area: social;
+		.submodule-container {
+			display: flex;
+			flex-direction: column;
+			justify-content:center;
+			align-items: center;
+			.submodule {
+				flex: auto;
+				display: flex;
+				flex-direction: row;
+				justify-content: flex-start;
+				width: 90%;
+				margin: 10px auto;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+
+	header {
+			grid-template-columns: 3fr 1fr;
+	}
+
+	main {
+
+		&.show-alert {
+			grid-template-rows: 150px minmax(150px, auto);
+		}
+		.tab {
+			grid-area: tab;
+
+			.heading {grid-area: heading;}
+			.search {grid-area: search;}
+			.notice {grid-area: notice;}
+			display: grid;
+			grid-template-columns: auto 1fr;
+			grid-template-rows: 70px;
+			grid-template-areas:
+				"heading search"
+				"notice notice";
+		}
+
+		.traffic {grid-area: traffic;}
+		.daily {grid-area: daily;}
+		.mobile {grid-area: mobile;}
+
+		.social {
+			.submodule-container {
+				.submodule {
+					width: 50%;
+				}
+			}
+		}
+
+		.new-members {
+			grid-area: new-members;
+			display: flex;
+    	flex-direction: column;
+		}
+		.recent-activity {
+			grid-area: recent-activity;
+			display: flex;
+    	flex-direction: column;
+		}
+		.message {
+			grid-area: message;
+			display: flex;
+    	flex-direction: column;
+		}
+		.settings {
+			grid-area: settings;
+			display: flex;
+    	flex-direction: column;
+		}
+
+		grid-template-columns: 50% 50%;
+		grid-template-areas:
+			"tab tab"
+			"traffic traffic"
+			"daily mobile"
+			"social social"
+			"new-members recent-activity"
+			"message settings";
+	}
+}
+
+@media (min-width: 1024px) {
+	.container {
+		grid-template-columns: 80px auto;
+		grid-template-rows: 70px auto;
+		grid-template-areas:
+			"header header"
+			"nav main";
+	}
+
+	main {
+		display: grid;
+		grid-template-rows: 70px minmax(150px, auto);
+		.social {
+			.submodule-container {
+				flex-direction: row;
+				justify-content: space-between;
+				.submodule {
+					margin-right: 35px;
+					width: auto;
+					&:last-child{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+
+}
