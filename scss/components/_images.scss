@@ -48,6 +48,7 @@ header{
 nav{
 	img[src$=".svg"] {
 		margin: 0;
+		min-width: 20px;
 		filter: invert(100%);
 		@media (min-width: 768px) {
 			margin: auto;

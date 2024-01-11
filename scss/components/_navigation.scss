@@ -5,12 +5,12 @@ nav {
 		margin-top: 11px;
 		list-style-type: none;
 		display: flex;
-    flex-direction: row;
+    	flex-direction: row;
 		justify-content: space-around;
 		align-content: center;
+		max-width: 100vm;
 		li {
 			padding: 0;
-			min-width: 2.5em;
 			&.active, &:hover {
 				cursor: pointer;
 				border-bottom: 5px solid #85db80;

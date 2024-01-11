@@ -20,39 +20,7 @@ function displayAlert() {
 };
 window.onload = displayAlert();
 
-//Notification dropdown
-const un = document.querySelector('.user-notifications');
-const nl = document.querySelector('.notification-list');
-const bell = document.querySelector('.bell');
-const dot = document.querySelector('.notification-dot');
 
-const clear = document.querySelector('.clear-notifications');
-const nlist = document.querySelector('.nlist');
-const emptylist = document.querySelector('.emptylist');
-
-function displayNotifications() {
-		nl.classList.toggle('show-notification');
-		bell.classList.toggle('fill-bell');
-	};
-
-function clearNotifications() {
-	let dn = displayNotifications();
-	nlist.classList.toggle('clearlist');
-	emptylist.classList.toggle('clearlist');
-	clear.style.display = 'none';
-	dot.style.display = 'none';
-	//dn.preventDefault();
-};
-
-
-un.addEventListener('click', (e) => {
-	displayNotifications();
-});
-
-
-clear.addEventListener('click', (e) => {
-	clearNotifications();
-});
 
 
 //autocomplete

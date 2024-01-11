@@ -24,58 +24,7 @@ header {
 				cursor: pointer;
 			}
 
-			.notification-list {
-				display: none;
-				&.show-notification {
-					display: block;
-					z-index: 100;
-				}
-				@extend %bubble;
-				position: absolute;
-				top: 32px;
-				right: -150px;
-				width: 300px;
-				@media (min-width: 768px){
-					top: 32px;
-					right: 0;
-				}
-
-				ul {
-					list-style-type: none;
-					margin-left: 0;
-					margin-top: 0;
-					margin-bottom: 0;
-					&.nlist {
-						li {
-							padding: 10px;
-							border-bottom: 1px solid $grey;
-							&:last-child {
-								border-bottom: none;
-							}
-							&:hover {
-							  background-color: rgba(3,3,3, .1);
-							}
-						}
-						&.clearlist {
-							display: none;
-						}
-					}
-					&.emptylist {
-						display: none;
-						li {
-							padding: 10px;
-							text-align: center;
-						}
-						&.clearlist {
-							display: block;
-						}
-					}
-				}
-				.clear-notifications {
-					float:right;
-					margin: 5px;
-				}
-			}
+			
 		}
 
 		.user {
@@ -177,6 +126,8 @@ main {
 			border-top: 1px solid $grey;
 		}
 		&.new-members {
+			display:flex;
+			flex-direction: column;
 			.member-list {
 				.member {
 					border-bottom: 1px solid $grey;
