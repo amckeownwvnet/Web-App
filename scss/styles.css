@@ -1181,6 +1181,8 @@ main .notice .alert .closebtn {
 main .module {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 main .module.traffic .traffic-header {
   display: flex;
@@ -1214,37 +1216,59 @@ main .module.new-members .member-list .member {
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  main .module.new-members .member-list .member {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: row;
+    text-align: left;
+  }
 }
 main .module.new-members .member-list .member:last-child {
   border-bottom: none;
 }
 main .module.new-members .member-list .member .user {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  main .module.new-members .member-list .member .user {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: row;
+    text-align: left;
+  }
 }
 main .module.new-members .member-list .member .user .avatar {
   margin: 0 15px 0 0;
   display: inline-block;
 }
-main .module.new-members .member-list .member .date {
-  margin-left: auto;
+@media (min-width: 768px) {
+  main .module.new-members .member-list .member .date {
+    margin-left: auto;
+  }
 }
 main .module.recent-activity .activity-list .member {
   border-bottom: 1px solid #cccccc;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 main .module.recent-activity .activity-list .member:last-child {
   border-bottom: none;
 }
 main .module.recent-activity .activity-list .member .user {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 main .module.recent-activity .activity-list .member .user .avatar {
   margin: 0 15px 0 0;
