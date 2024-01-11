@@ -560,7 +560,7 @@ main .social .submodule-container .submodule {
     grid-area: mobile;
   }
   main .social .submodule-container .submodule {
-    width: 50%;
+    width: auto;
   }
   main .new-members {
     grid-area: new-members;
@@ -702,10 +702,10 @@ nav ul {
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
-  max-width: 100vm;
 }
 nav ul li {
   padding: 0;
+  width: 10%;
 }
 nav ul li.active, nav ul li:hover {
   cursor: pointer;
@@ -714,6 +714,9 @@ nav ul li.active, nav ul li:hover {
 }
 
 @media (min-width: 768px) {
+  nav ul li {
+    width: 5%;
+  }
   nav ul li.active, nav ul li:hover {
     padding-bottom: 1.5%;
   }
@@ -731,6 +734,7 @@ nav ul li.active, nav ul li:hover {
     margin-bottom: 50px;
     padding: 10px;
     border-left: 5px solid #4d4c72;
+    width: 90%;
   }
   nav ul li.active {
     padding-bottom: 10px;
@@ -1177,8 +1181,6 @@ main .notice .alert .closebtn {
 main .module {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-right: 30px;
-  padding-left: 30px;
 }
 main .module.traffic .traffic-header {
   display: flex;
@@ -1297,5 +1299,5 @@ main .border-top {
   border-top: 1px solid #cccccc;
 }
 main .chart-container {
-  height: 300px;
+  width: 90vw;
 }/*# sourceMappingURL=styles.css.map */

@@ -93,11 +93,7 @@ main {
 	.module {
 		padding-top: 30px;
 		padding-bottom: 30px;
-		padding-right: 30px;
-		padding-left: 30px;
 		&.traffic {
-			//display: flex;
-			//flex-direction: row;
 			.traffic-header {
 				display: flex;
 				flex-direction: column;
@@ -237,6 +233,6 @@ main {
 	}
 
 	.chart-container {
-		height: 300px;
+		width: 90vw;
 	}
 }

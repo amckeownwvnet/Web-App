@@ -8,9 +8,9 @@ nav {
     	flex-direction: row;
 		justify-content: space-around;
 		align-content: center;
-		max-width: 100vm;
 		li {
 			padding: 0;
+			width: 10%;
 			&.active, &:hover {
 				cursor: pointer;
 				border-bottom: 5px solid #85db80;
@@ -24,6 +24,7 @@ nav {
 	nav {
 		ul {
 			li {
+				width: 5%;
 				&.active, &:hover {
 	    		padding-bottom: 1.5%;
 				}
@@ -43,6 +44,7 @@ nav {
 				margin-bottom: 50px;
 				padding: 10px;
 				border-left: 5px solid $purple;
+				width: 90%;
 				&.active {
 					padding-bottom: 10px;
 					border-bottom:none;
