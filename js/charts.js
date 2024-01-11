@@ -1,5 +1,3 @@
-import Chart from 'chart.js/auto'
-
 const trafficCanvas = document.getElementById("trafficOverview");
 const dailyCanvas = document.getElementById("dailyTraffic");
 const mobileCanvas = document.getElementById("mobileUsers");
