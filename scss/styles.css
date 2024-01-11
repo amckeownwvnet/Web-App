@@ -807,7 +807,6 @@ nav img[src$=".svg"] {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  margin: 0;
   position: relative;
   display: inline-block;
 }
@@ -1270,6 +1269,14 @@ main .module.recent-activity .activity-list .member .user {
   justify-content: center;
   text-align: center;
 }
+@media (min-width: 768px) {
+  main .module.recent-activity .activity-list .member .user {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: row;
+    text-align: left;
+  }
+}
 main .module.recent-activity .activity-list .member .user .avatar {
   margin: 0 15px 0 0;
   display: inline-block;
@@ -1321,7 +1328,4 @@ main .border-bottom {
 }
 main .border-top {
   border-top: 1px solid #cccccc;
-}
-main .chart-container {
-  width: 90vw;
 }/*# sourceMappingURL=styles.css.map */

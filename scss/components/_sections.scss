@@ -185,6 +185,11 @@ main {
 						flex-direction: column;
 						justify-content: center;
 						text-align: center;
+						@media (min-width: 768px){
+							flex-direction: row;
+						justify-content: flex-start;
+						align-items: row;
+						text-align: left;}
 						.avatar {
 							margin: 0 15px 0 0;
 							display: inline-block;
@@ -250,10 +255,6 @@ main {
 	}
 	.border-top {
 		border-top: 1px solid $grey;
-	}
-
-	.chart-container {
-		width: 90vw;
 	}
 
 
