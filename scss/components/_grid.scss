@@ -72,6 +72,7 @@ main {
 			grid-template-areas:
 				"heading search"
 				"notice notice";
+			margin-bottom: 20px;
 		}
 
 		.traffic {grid-area: traffic;}
@@ -134,6 +135,8 @@ main {
 			.submodule-container {
 				flex-direction: row;
 				justify-content: space-between;
+				padding-left: 20px;
+   				 padding-right: 20px;
 				.submodule {
 					margin-right: 35px;
 					width: auto;

@@ -64,6 +64,7 @@ main {
 	.notice{
 		display: block;
 		transition: all 1s ease-in-out;
+		margin-bottom: 20px;
 		&.hide {
 			display: none;
 		}
@@ -100,6 +101,9 @@ main {
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
+				@media (min-width: 768px){
+					margin-top: 50px;
+				}
 				.traffic-type {
 					list-style-type: none;
 					margin-top: 0;
@@ -221,6 +225,7 @@ main {
 		.heading {
 			padding-right: 30px;
 			padding-left: 30px;
+			padding-top: 20px;
 		}
 		.search {
 			border-bottom: 1px solid $grey;
@@ -252,6 +257,7 @@ main {
 
 	.border-bottom {
 		border-bottom: 1px solid $grey;
+
 	}
 	.border-top {
 		border-top: 1px solid $grey;

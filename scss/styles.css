@@ -540,6 +540,7 @@ main .social .submodule-container .submodule {
     grid-template-columns: auto 1fr;
     grid-template-rows: 70px;
     grid-template-areas: "heading search" "notice notice";
+    margin-bottom: 20px;
   }
   main .tab .heading {
     grid-area: heading;
@@ -596,6 +597,8 @@ main .social .submodule-container .submodule {
   main .social .submodule-container {
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   main .social .submodule-container .submodule {
     margin-right: 35px;
@@ -1154,6 +1157,7 @@ main .tab .search .search-form .fa-search:hover {
 main .notice {
   display: block;
   transition: all 1s ease-in-out;
+  margin-bottom: 20px;
 }
 main .notice.hide {
   display: none;
@@ -1187,6 +1191,11 @@ main .module.traffic .traffic-header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+@media (min-width: 768px) {
+  main .module.traffic .traffic-header {
+    margin-top: 50px;
+  }
 }
 main .module.traffic .traffic-header .traffic-type {
   list-style-type: none;
@@ -1296,6 +1305,7 @@ main .module.recent-activity .activity-list .member .more {
 main .tab .heading {
   padding-right: 30px;
   padding-left: 30px;
+  padding-top: 20px;
 }
 main .tab .search {
   border-bottom: 1px solid #cccccc;
