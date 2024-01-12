@@ -1218,6 +1218,7 @@ main .module.mobile, main .module.recent-activity, main .module.message, main .m
 main .module.new-members {
   display: flex;
   flex-direction: column;
+  grid-column-start: inherit;
 }
 main .module.new-members .member-list .member {
   border-bottom: 1px solid #cccccc;
@@ -1338,4 +1339,8 @@ main .border-bottom {
 }
 main .border-top {
   border-top: 1px solid #cccccc;
+}
+
+.memwrap {
+  display: grid;
 }/*# sourceMappingURL=styles.css.map */

@@ -130,6 +130,7 @@ main {
 		&.new-members {
 			display:flex;
 			flex-direction: column;
+			grid-column-start: inherit;
 			.member-list {
 				.member {
 					border-bottom: 1px solid $grey;
@@ -264,4 +265,7 @@ main {
 	}
 
 
+}
+.memwrap{
+	display:grid;
 }
