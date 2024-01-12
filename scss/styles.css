@@ -550,6 +550,7 @@ main .social .submodule-container .submodule {
   }
   main .tab .notice {
     grid-area: notice;
+    width: 95%;
   }
   main .traffic {
     grid-area: traffic;
