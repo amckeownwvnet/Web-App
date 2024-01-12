@@ -560,8 +560,15 @@ main .social .submodule-container .submodule {
   main .mobile {
     grid-area: mobile;
   }
+  main .social .submodule-container {
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+  }
   main .social .submodule-container .submodule {
     width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   main .new-members {
     grid-area: new-members;
@@ -1236,6 +1243,7 @@ main .module.new-members .member-list .member {
     justify-content: flex-start;
     align-items: row;
     text-align: left;
+    padding-bottom: 36px;
   }
 }
 main .module.new-members .member-list .member:last-child {
