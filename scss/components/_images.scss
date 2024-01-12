@@ -26,6 +26,9 @@ header{
 			}
 			&:hover, &.fill-bell {
 				cursor: pointer;
+				width:30px;
+				transition: width .5s;
+				
 				path {
 				 &.default {
 						opacity: 0;

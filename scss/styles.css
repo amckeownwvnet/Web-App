@@ -789,6 +789,8 @@ header .user-notifications svg.bell path.fill {
 }
 header .user-notifications svg.bell:hover, header .user-notifications svg.bell.fill-bell {
   cursor: pointer;
+  width: 30px;
+  transition: width 0.5s;
 }
 header .user-notifications svg.bell:hover path.default, header .user-notifications svg.bell.fill-bell path.default {
   opacity: 0;
