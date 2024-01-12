@@ -1,4 +1,4 @@
-import Chart from 'chart.js/auto'
+
 const mglass = document.querySelector('.fa-search');
 
 // Display Alert notice on load, clear on click
