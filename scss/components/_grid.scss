@@ -22,6 +22,7 @@ header {
 nav {
 	background-color: $purple;
 	grid-area: nav;
+	display: flex;
 }
 
 main {
@@ -65,6 +66,7 @@ grid-template-areas:
 
 		&.show-alert {
 			display: grid;
+			width: 94vw;
 		}
 		.tab {
 			grid-area: tab;
@@ -93,8 +95,8 @@ grid-template-areas:
 		.social {
 			.submodule-container {
 				flex-direction: row;
-				width: 90%;
-				justify-content: space-evenly;
+				justify-content: flex-start;
+
 				
 
 				.submodule {

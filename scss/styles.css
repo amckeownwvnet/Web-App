@@ -497,6 +497,7 @@ header {
 nav {
   background-color: #4d4c72;
   grid-area: nav;
+  display: flex;
 }
 
 main {
@@ -537,6 +538,7 @@ main .social .submodule-container .submodule {
   }
   main.show-alert {
     display: grid;
+    width: 94vw;
   }
   main .tab {
     grid-area: tab;
@@ -569,8 +571,7 @@ main .social .submodule-container .submodule {
   }
   main .social .submodule-container {
     flex-direction: row;
-    width: 90%;
-    justify-content: space-evenly;
+    justify-content: flex-start;
   }
   main .social .submodule-container .submodule {
     width: auto;
@@ -830,17 +831,18 @@ nav img[src$=".svg"] {
 @media (min-width: 768px) {
   nav img[src$=".svg"] {
     margin: auto;
+    width: 90%;
   }
 }
 
 .social .submodule .social-icon {
   background: #7477bf;
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   position: relative;
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .social .submodule .social-icon .icon {
   position: absolute;
@@ -848,20 +850,20 @@ nav img[src$=".svg"] {
 .social .submodule .social-icon .icon.facebook {
   width: 40px;
   height: 32px;
-  top: 1.15em;
-  left: 1.2em;
+  top: 1em;
+  left: 0.75em;
 }
 .social .submodule .social-icon .icon.instagram {
   width: 33px;
   height: 37px;
-  top: 1.25em;
-  left: 1.25em;
+  top: 0.8em;
+  left: 0.9em;
 }
 .social .submodule .social-icon .icon.twitter {
   width: 30px;
   height: 30px;
-  top: 1.25em;
-  left: 1.25em;
+  top: 0.9em;
+  left: 1em;
 }
 .social .submodule .social-icon .icon path {
   fill: #ffffff;
@@ -1161,7 +1163,7 @@ header .user-header .user {
 }
 @media (min-width: 768px) {
   header .user-header {
-    padding-right: 16px;
+    padding-right: 5px;
   }
 }
 
@@ -1352,7 +1354,7 @@ main .submodule {
   background-color: #fbfbfb;
   border: 1px solid #cccccc;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 20px;
 }
 main .submodule .shares h4 {
@@ -1373,4 +1375,8 @@ main .border-top {
 
 .memwrap {
   display: grid;
+}
+
+.chart-container {
+  width: auto;
 }/*# sourceMappingURL=styles.css.map */
