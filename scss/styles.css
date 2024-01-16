@@ -720,6 +720,7 @@ nav ul {
   flex-direction: row;
   justify-content: space-around;
   align-content: center;
+  flex-grow: 1;
 }
 nav ul li {
   padding: 0;
